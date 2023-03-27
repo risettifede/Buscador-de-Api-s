@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>ESTA ES MI APP PROBANDO UNA API SOLO POR PRIMERA VEZ</title>
+</head>
+
+<body>
+    <h1>ESTA ES MI APP PROBANDO UNA API SOLO POR PRIMERA VEZ</h1>
+
+    <main class="container">
+        <form id="form">
+            <label>
+                IP del usuario
+                <input required type="text" placeholder="Introduce aquí la IP" id="input">
+                <small>
+                    Por ejemplo: 54.85.132.205
+                </small>
+            </label>
+            <button type="sumbit" id="sumbit">
+                <!-- Una buena práctica es que el boton lleve siempre un "TYPE". Pero acá sucede que, un boton, por defecto, se comporta como SUMBIT al final de un form-->
+                Buscar información de esta IP
+            </button>
+        </form>
+
+        <div>
+            <pre id="results">
+
+        </pre>
+        </div>
+    </main>
+</body>
+
+</html>
