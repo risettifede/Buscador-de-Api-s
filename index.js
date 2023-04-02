@@ -8,16 +8,15 @@ const OPTIONS = {
 }
 
 const fetchIpInfo = async (id) => {
-  try{
+  try {
     const getInfo = await fetch(`https://dummyjson.com/products/${id}`, OPTIONS)
-    const data =  getInfo.json()
+    const data = getInfo.json()
     console.log(data)
     return data
-  }catch(err){
+  } catch (err) {
     console.log(err)
   }
 }
-
 
 // const $ = selector => document.querySelector(selector)
 // const $form = $("#form") 
@@ -27,7 +26,6 @@ const $form = document.querySelector("#form")
 const $input = document.querySelector("#input")
 const $sumbit = document.querySelector("#sumbit")
 const $results = document.querySelector("#results")
-
 
 
 async function logSomething(e) {
@@ -50,10 +48,15 @@ async function logSomething(e) {
   //   $results.innerHTML = JSON.strindify(ipInfo, null, 2)
   // }
 
+
+  // Crear un div 
+  // A ese div hacerle un append de un titulo para el nombre del producto
+  // Y dos parrafor para  el precio y la descripcion
+  // Mostrar ese div en pantalla
+
+
   // $sumbit.removeAttribute('disabled')
   // $sumbit.removeAttribute('aria-busy')
-
-
 
 }
 
